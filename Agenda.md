@@ -32,6 +32,8 @@
 - Software Setup
 - Workbook Setup
 - [JavaScript Review (Intro)](https://dmit-2008.github.io/dmit2008/classes/week-1/day-2)
+- Homework:
+  - [Practice Version Control](https://dgilleland.github.io/CPSC-1520/tutorials/0011/)
 
 
 ### Sep 08
