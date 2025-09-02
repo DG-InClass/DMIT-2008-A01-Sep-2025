@@ -26,10 +26,12 @@
 
 ### Sep 02
 
-- Course Introduction
+- Introductions
+- Course Overview
 - GitHub Account Setup
 - Software Setup
 - Workbook Setup
+- [JavaScript Review (Intro)](https://dmit-2008.github.io/dmit2008/classes/week-1/day-2)
 
 
 ### Sep 08
