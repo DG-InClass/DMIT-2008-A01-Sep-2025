@@ -39,6 +39,7 @@
   - [ ] Arrays and Loops
 - Homework:
   - [Practice Version Control](https://dgilleland.github.io/CPSC-1520/tutorials/0011/)
+  - Read [Exploring ES6, chapters 1-3](https://exploringjs.com/es6/)
 
 
 ### Sep 08
