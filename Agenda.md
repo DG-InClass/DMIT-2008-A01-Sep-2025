@@ -44,6 +44,7 @@
 
 ### Sep 08
 
+See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/lessons/w02-d1/) on my Ad-Hoc site.
 
 ### Sep 09
 
