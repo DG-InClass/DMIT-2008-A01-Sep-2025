@@ -46,6 +46,11 @@
 
 See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/lessons/w02-d1/) on my Ad-Hoc site.
 
+- [x] First JavaScript Demo + Node Project Setup
+- **Homework**
+  - [ ] Complete any unfinished parts of the first JavaScript Demo
+  - [ ] Read the instructions for the *Astronauts* demo and set up the Node project for that starter kit.
+
 ### Sep 09
 
 
