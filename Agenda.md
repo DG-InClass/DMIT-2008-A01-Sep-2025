@@ -1,6 +1,6 @@
 # Agenda (A01)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#sep-02).
+> These are my notes on what I plan to teach in each [**upcoming class**](#sep-09).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -53,6 +53,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Sep 09
 
+- [ ] Continue JavaScript Review with the [Astronaut](./src/A/review-astronauts-example-START/README.md) demo
 
 ### Sep 15
 
