@@ -1,6 +1,6 @@
 # Agenda (A01)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#sep-09).
+> These are my notes on what I plan to teach in each [**upcoming class**](#sep-15).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -64,6 +64,11 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Sep 15
 
+- **Today**
+  - More JavaScript Review (*ad-hoc*)
+  - Intro to React and NextJS
+- **Homework**
+  - ***TBA** - Link for Weather App demo coming soon...*
 
 ### Sep 16
 
