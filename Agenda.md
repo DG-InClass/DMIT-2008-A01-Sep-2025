@@ -66,12 +66,15 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 - **Today**
   - More JavaScript Review (*ad-hoc*)
-  - Intro to React and NextJS
 - **Homework**
   - ***TBA** - Link for Weather App demo coming soon...*
 
 ### Sep 16
 
+- **Today**
+  - [Intro to React and NextJS](https://dmit-2008.github.io/dmit2008/classes/week-3/day-1)
+  - [Props, Wrappers, and Lists (Part 1)](https://dmit-2008.github.io/dmit2008/classes/week-3/day-2)
+  - [Props, Wrappers, and Lists (Part 2)](https://dmit-2008.github.io/dmit2008/classes/week-4/day-1)
 
 ### Sep 22
 
