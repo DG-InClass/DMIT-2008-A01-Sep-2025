@@ -65,9 +65,10 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Sep 15
 
 - **Today**
-  - More JavaScript Review (*ad-hoc*)
+  - More [JavaScript Review](https://dmit-2008.github.io/dmit2008/classes/week-2/day-2)
+  - Work on Weather App demo
 - **Homework**
-  - ***TBA** - Link for Weather App demo coming soon...*
+  - *Review [complete solution for Weather App](https://dgilleland.github.io/DMIT-2008/lessons/w02-d2/) demo*
 
 ### Sep 16
 
@@ -77,6 +78,9 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
   - [Props, Wrappers, and Lists (Part 2)](https://dmit-2008.github.io/dmit2008/classes/week-4/day-1)
 
 ### Sep 22
+
+- **Today**
+  - [ ] Review the other [NextJS/React Intro demos](./src/B/ReadMe.md)
 
 
 ### Sep 23
