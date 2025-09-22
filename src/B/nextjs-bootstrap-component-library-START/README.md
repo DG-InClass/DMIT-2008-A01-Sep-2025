@@ -14,7 +14,7 @@ You've probably dealt with bootstrap before, so we're going to see the "react" w
     `cd components-bootstrap-example`
     Run the project
     `npm run dev`
-2. Stop your project (ctrl+c) and install react-bootstrap as seen in the [instructions here](https://react-bootstrap.github.io/getting-started/introduction)
+2. Stop your project (ctrl+c) and install react-bootstrap as seen in the [instructions here](https://react-bootstrap.github.io/docs/getting-started/introduction)
 - in your terminal (and at the root of the project) install bootstrap via npm `npm install react-bootstrap bootstrap`
 - just as we've done in CPSC1520, we need to add the bootstrap stylesheets to the entry point of the application.
 ```js
