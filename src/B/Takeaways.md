@@ -5,7 +5,9 @@ Here are some key takeaways about NextJS/React projects created using `npx creat
 - This way to create apps is **deprecated** as of Feb 2025! ***But*** we are still going to use it in this course. `¯\_(ツ)_/¯`
 - **Always** pay attention to the versions of React/NextJS that you are using (see your `package.json`)! 🤞
 - The common settings we'll use when creating a NextJS app will be:
-  - 
+  - No TypeScript
+  - ESLint
+  - No to all the other questions
 - 🚨 *The various `README.md` docs in this workbook's starter kits are **OLD** and probably have broken links to different pages.*
   - *Watch me* as I trouble-shoot these with you live in class. You might learn something about problem solving. 👀🤣
 - There is **no `index.html`** file!
