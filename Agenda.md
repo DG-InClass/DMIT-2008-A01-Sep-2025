@@ -75,12 +75,13 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 - **Today** - Begin [Part B](./src/B/ReadMe.md)
   - [Intro to React and NextJS](https://dmit-2008.github.io/dmit2008/classes/week-3/day-1)
   - [Props, Wrappers, and Lists (Part 1)](https://dmit-2008.github.io/dmit2008/classes/week-3/day-2)
-  - [Props, Wrappers, and Lists (Part 2)](https://dmit-2008.github.io/dmit2008/classes/week-4/day-1)
 
 ### Sep 22
 
 - **Today**
-  - [ ] Review the other [NextJS/React Intro demos](./src/B/ReadMe.md)
+  - [Props, Wrappers, and Lists (Part 2)](https://dmit-2008.github.io/dmit2008/classes/week-4/day-1)
+  - [ ] Review/Attempt the other [NextJS/React Intro demos](./src/B/ReadMe.md)
+  - [ ] Identify the [**main takeaways**](./src/B/Takeaways.md)
 
 
 ### Sep 23
