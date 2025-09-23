@@ -88,10 +88,14 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Sep 23
 
-- **Today** - Begin [Part C](./src/C/ReadMe.md)
+- **Today**
+  - [ ] Complete Part B - Bootstrap and MUI
+  - [ ] Begin [Part C](./src/C/ReadMe.md)
 
 ### Sep 29
 
+- **Today**
+  - [ ] Complete Part C
 
 ### Sep 30
 
