@@ -89,12 +89,13 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Sep 23
 
 - **Today**
+  - [ ] Assignment 1 Troubleshooting
   - [ ] Complete Part B - Bootstrap and MUI
-  - [ ] Begin [Part C](./src/C/ReadMe.md)
 
 ### Sep 29
 
 - **Today**
+  - [ ] Begin [Part C](./src/C/ReadMe.md)
   - [ ] Complete Part C
 
 ### Sep 30
