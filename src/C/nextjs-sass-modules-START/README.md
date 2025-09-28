@@ -27,7 +27,7 @@ You're going to want to use some styling perhaps on top of material ui (and mate
       module.exports = nextConfig
       ```
    
-   - We're going to add a couple lines to add the sass support [as shown here](https://nextjs.org/docs/basic-features/built-in-css-support#sass-support)
+   - We're going to add a couple lines to add the sass support [as shown here](https://nextjs.org/docs/app/guides/sass)
    so that our `next.config.js` becomes
    
       ```js
