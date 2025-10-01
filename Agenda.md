@@ -96,7 +96,6 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 - **Today**
   - [ ] Begin [Part C](./src/C/ReadMe.md)
-  - [ ] Complete Part C
 
 ### Sep 30
 
