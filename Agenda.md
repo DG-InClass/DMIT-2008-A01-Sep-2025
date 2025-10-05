@@ -109,6 +109,10 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Oct 07
 
 
+### Oct 13
+
+- ***No Classes*** - Thanksgiving
+
 ### Oct 14
 
 
