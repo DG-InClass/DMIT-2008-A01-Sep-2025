@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import TodoList from "../components/TodoList";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +27,7 @@ export default function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
+          <TodoList></TodoList>
           <blockquote>
             <ul>
               <li><code>npx create-next-app@latest state-events-fundamentals</code></li>
