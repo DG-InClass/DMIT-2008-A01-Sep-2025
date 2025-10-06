@@ -2,19 +2,28 @@
 import { Box, Button, Grid, TextField } from '@mui/material';
 import {useState} from 'react'; // useState is a "hook"
 
-// Create an event handler
-
-const onAddTodoClick = () => {
-    console.log('clicked');
-}
 
 export default function TodoList(props) {
     // The following is state that our component will manage
-    const [todoText, setTodoText] = useState("");
+    const [todoText, setTodoText] = useState(""); // Single Todo Item
+    const [allTodos, setAlltodos] = useState([]); // All the Todo Items
+
     const onTodoTextChange = (event) => {
         console.log(event.target.value);
         setTodoText(event.target.value);
     }
+
+    const onAddTodoClick = () => {
+        console.log('clicked');
+        // create a new list that has allTodos and the new todo item
+        const newAllTodoList = [...allTodos, todoText];
+        console.log('Updated TODO List:', newAllTodoList);
+        // preserve this new state of all the todo items
+        setAlltodos(newAllTodoList);
+        // reset the value of the todo text.
+        setTodoText(""); // and empty string
+    }
+
 
     return <>
         <TextField id="standard-basic" label="New Todo?"
