@@ -1,6 +1,6 @@
 // ~/components/TodoList.js
-import { Box, Button, Grid, TextField } from '@mui/material';
-import {useState} from 'react'; // useState is a "hook"
+import { Box, Button, Grid, TextField, List, ListItem, ListItemText, Typography } from '@mui/material';
+import { useState } from 'react'; // useState is a "hook"
 
 
 export default function TodoList(props) {
@@ -27,12 +27,19 @@ export default function TodoList(props) {
 
     return <>
         <TextField id="standard-basic" label="New Todo?"
-           variant="standard" sx={{width: '100%'}}
-           onChange={onTodoTextChange} value={todoText} />
+            variant="standard" sx={{ width: '100%' }}
+            onChange={onTodoTextChange} value={todoText} />
         <Button variant='contained' onClick={onAddTodoClick}>Add Todo</Button>
         <Grid item xs={12}>
-            Current input text: {todoText} <br />
-            Current TodoList: {allTodos.toString()}
+            <List sx={{ width: '100%' }}>
+                {allTodos.map((todoItem, index) => <ListItem key={index}>
+                    <ListItemText>
+                        <Typography variant='p' component='div'>
+                            {todoItem}
+                        </Typography>
+                    </ListItemText>
+                </ListItem>)}
+            </List>
         </Grid>
     </>
 }
