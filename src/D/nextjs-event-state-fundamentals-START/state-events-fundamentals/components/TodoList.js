@@ -31,7 +31,8 @@ export default function TodoList(props) {
            onChange={onTodoTextChange} value={todoText} />
         <Button variant='contained' onClick={onAddTodoClick}>Add Todo</Button>
         <Grid item xs={12}>
-            Current input text: {todoText}
+            Current input text: {todoText} <br />
+            Current TodoList: {allTodos.toString()}
         </Grid>
     </>
 }
