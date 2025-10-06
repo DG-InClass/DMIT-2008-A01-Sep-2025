@@ -21,5 +21,8 @@ export default function TodoList(props) {
            variant="standard" sx={{width: '100%'}}
            onChange={onTodoTextChange} value={todoText} />
         <Button variant='contained' onClick={onAddTodoClick}>Add Todo</Button>
+        <Grid item xs={12}>
+            Current input text: {todoText}
+        </Grid>
     </>
 }
