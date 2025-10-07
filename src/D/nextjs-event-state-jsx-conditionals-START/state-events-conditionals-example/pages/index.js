@@ -105,6 +105,15 @@ export default function Home() {
             </Grid>
           </form>
           <List sx={{width: `100%`}}>
+          { movies.length === 0 && 
+            <ListItem>
+              <ListItemText>
+                <Typography variant='p' component='div'>
+                  No results. Please search again.
+                </Typography>
+              </ListItemText>
+            </ListItem>
+          }
           { movies.map((movieData, index)=> {
               return <ListItem key={index}>
                 <ListItemText>
