@@ -4,7 +4,9 @@
 
 You want to show something conditionally on the page or conditionally render lists. This is a critical part of using state in the 
 
-# Steps
+![](./images/form-preview.png)
+
+## Steps
 
 1. Navigate into the folder `state-events-conditionals-example` and observe what is there already.
     Note: 
