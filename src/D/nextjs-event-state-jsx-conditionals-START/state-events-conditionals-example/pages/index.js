@@ -1,5 +1,6 @@
 import { MOVIE_LIST } from '../utils/movies'
 import { useState } from 'react';
+import { isNumber, isEmptyString } from '../utils/validations';
 
 import Head from 'next/head'
 import Image from 'next/image'
