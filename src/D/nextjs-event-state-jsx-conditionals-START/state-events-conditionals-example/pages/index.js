@@ -1,4 +1,5 @@
 import { MOVIE_LIST } from '../utils/movies'
+import { useState } from 'react';
 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -16,6 +17,9 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 
 export default function Home() {
+  const [search, setSearch] = useState("");
+  const [year, setYear] = useState("");
+
   return (
     <div>
       <Head>
@@ -41,7 +45,8 @@ export default function Home() {
                   label="search..."
                   variant="standard"
                   sx={{width: '100%'}}
-                  
+                  onChange={(e) => {setSearch(e.target.value);}}
+                  value={search}
                 />
               </Grid>
               <Grid item xs={4}>
@@ -50,7 +55,8 @@ export default function Home() {
                   label="year"
                   variant="standard"
                   sx={{width: '100%'}}
-                 
+                  onChange={(e) => {setYear(e.target.value);}}
+                  value={year}
                 />
               </Grid>
               <Grid item xs={2}>
