@@ -19,6 +19,12 @@ import ListItemText from '@mui/material/ListItemText';
 export default function Home() {
   const [search, setSearch] = useState("");
   const [year, setYear] = useState("");
+  
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Stop it from submitting to the backend
+    console.log(`year: ${year}`);
+    console.log(`search: ${search}`);
+  }
 
   return (
     <div>
@@ -37,7 +43,7 @@ export default function Home() {
           <Typography variant="h2" component="h2" style={{textAlign: "center"}}>
             Movies
           </Typography>
-          <form style={{width: '100%'}}>
+          <form style={{width: '100%'}} onSubmit={handleSubmit}>
             <Grid container spacing={2}>
               <Grid item xs={6}>
                 <TextField
