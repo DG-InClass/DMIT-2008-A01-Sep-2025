@@ -19,6 +19,7 @@ import ListItemText from '@mui/material/ListItemText';
 export default function Home() {
   const [search, setSearch] = useState("");
   const [year, setYear] = useState("");
+  const [movies, setMovies] = useState(MOVIE_LIST);
   
   const handleSubmit = (event) => {
     event.preventDefault(); // Stop it from submitting to the backend
@@ -77,7 +78,7 @@ export default function Home() {
             </Grid>
           </form>
           <List sx={{width: `100%`}}>
-          { MOVIE_LIST.map((movieData, index)=> {
+          { movies.map((movieData, index)=> {
               return <ListItem key={index}>
                 <ListItemText>
                   <Typography variant="p" component="div">
