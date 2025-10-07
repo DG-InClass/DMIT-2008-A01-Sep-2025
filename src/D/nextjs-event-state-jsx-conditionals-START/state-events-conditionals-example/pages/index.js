@@ -21,12 +21,29 @@ export default function Home() {
   const [search, setSearch] = useState("");
   const [year, setYear] = useState("");
   const [movies, setMovies] = useState(MOVIE_LIST);
+  const [errorMessage, setErrorMessage] = useState("");
   
   const handleSubmit = (event) => {
     event.preventDefault(); // Stop it from submitting to the backend
     console.log(`year: ${year}`);
     console.log(`search: ${search}`);
-    filterMovies();
+    if(validateSearch()) filterMovies();
+  }
+
+  const validateSearch = () => {
+    // if the year is empty
+    if(year.trim().length === 0) {
+      setErrorMessage(""); // reset the error
+    } else {
+      if(!isNumber(year)) {
+        setErrorMessage(`"${year}" is not a valid year`);
+      } else {
+        if(year.trim().length !== 4) {
+          setErrorMessage(`I don't think they made movies in the year ${year}`);
+        }
+      }
+    }
+    return isEmptyString(errorMessage);
   }
 
   const filterMovies = () => {
@@ -102,6 +119,9 @@ export default function Home() {
               </Grid>
               <Grid item xs={10}>
                 {/* Add the error message here*/}
+                { !isEmptyString(errorMessage) &&
+                  <Alert severity="error">{errorMessage}</Alert>
+                }
               </Grid>
             </Grid>
           </form>
