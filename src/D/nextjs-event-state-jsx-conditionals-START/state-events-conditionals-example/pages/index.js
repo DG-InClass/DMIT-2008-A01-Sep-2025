@@ -25,6 +25,25 @@ export default function Home() {
     event.preventDefault(); // Stop it from submitting to the backend
     console.log(`year: ${year}`);
     console.log(`search: ${search}`);
+    filterMovies();
+  }
+
+  const filterMovies = () => {
+    // make a copy of the movie list
+    let filteredMovieList = [...MOVIE_LIST]; // copy of original
+
+    // check if the search is empty (and filter if it is not...)
+    if(search.trim() !== "") {
+      // loop through the movies and check if the name
+      // includes the search value (both lower case)
+      filteredMovieList = filteredMovieList.filter((movieData) => {
+        let isMatch = movieData.name.toLowerCase().includes(search.trim().toLowerCase());
+        return isMatch;
+      });
+    }
+    // check if the year is empty (and filter if it is not...)
+    // update the state of the movies
+    setMovies(filteredMovieList);
   }
 
   return (
