@@ -1,6 +1,6 @@
 # Agenda (A01)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#sep-22). Also check out the [**Draft Planning Calendar**](./Calendar.md)
+> These are my notes on what I plan to teach in each [**upcoming class**](#oct-07). Also check out the [**Draft Planning Calendar**](./Calendar.md)
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -107,6 +107,8 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 
 ### Oct 07
+
+- **Today** - Continue [Part D](./src/D/ReadMe.md)
 
 
 ### Oct 13
