@@ -41,7 +41,15 @@ export default function Home() {
         return isMatch;
       });
     }
+
     // check if the year is empty (and filter if it is not...)
+    if (year.trim() !== ""){
+      // loop through the movies and check if the year is the same as the 
+      filteredMovieList = filteredMovieList.filter((movieData)=> {
+      return movieData.year === parseInt(year.trim())
+      })  
+    }
+    
     // update the state of the movies
     setMovies(filteredMovieList);
   }
