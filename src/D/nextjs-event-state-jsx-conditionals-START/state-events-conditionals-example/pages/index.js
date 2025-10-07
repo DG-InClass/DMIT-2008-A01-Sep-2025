@@ -105,7 +105,7 @@ export default function Home() {
             </Grid>
           </form>
           <List sx={{width: `100%`}}>
-          { movies.length === 0 && 
+          { movies.length === 0 ? 
             <ListItem>
               <ListItemText>
                 <Typography variant='p' component='div'>
@@ -113,8 +113,7 @@ export default function Home() {
                 </Typography>
               </ListItemText>
             </ListItem>
-          }
-          { movies.map((movieData, index)=> {
+          : movies.map((movieData, index)=> {
               return <ListItem key={index}>
                 <ListItemText>
                   <Typography variant="p" component="div">
