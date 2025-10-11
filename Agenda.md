@@ -118,10 +118,14 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Oct 14
 
 - **Today** - Begin [Part E](./src/E/ReadMe.md)
+  - 15 Minutes: [API Calls](src\E\react-rest-fundamentals-START\README.md)
 
 
 ### Oct 20
 
+- **Today** - Begin [Part F](./src/F/ReadMe.md)
+  - We'll need to **adapt the instructions** so that you use your **personal GitHub account** for this demo
+  - 🚨 **NEVER** publish marked assignments outside of the provided *GitHub Classroom assignment repos*. This includes *after you finish this course*.
 
 ### Oct 21
 
