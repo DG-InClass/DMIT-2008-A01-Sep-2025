@@ -109,6 +109,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Oct 07
 
 - **Today** - Continue [Part D](./src/D/ReadMe.md)
+  - [ ] Identify the [**main takeaways**](./src/D/Takeaways.md)
 
 
 ### Oct 13
@@ -119,6 +120,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 - **Today** - Begin [Part E](./src/E/ReadMe.md)
   - 15 Minutes: [API Calls](src\E\react-rest-fundamentals-START\README.md)
+  - [ ] Identify the [**main takeaways**](./src/E/Takeaways.md)
 
 
 ### Oct 20
