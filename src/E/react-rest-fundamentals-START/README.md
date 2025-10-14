@@ -14,7 +14,7 @@ We're also going to use a rest api client to observe what's going on in the rest
 # Steps
 
 1. Open your rest api client and get a random quote, so we can see the payload.
-   - make a get request to ~~`https://api.quotable.io/random`~~ **`https://favqs.com/api/qotd`** as per [the documentation](https://favqs.com/api).
+  - make a get request to ~~`https://api.quotable.io/random`~~ **`https://favqs.com/api/qotd`** as per [the documentation](https://favqs.com/api).
    You'll see that the response body returns something like this.
 
     ```json
@@ -33,20 +33,21 @@ We're also going to use a rest api client to observe what's going on in the rest
         "author_permalink": "mrs-francina-friesen",
         "body": "Doubt that the sun doth move, doubt truth to be a liar, but never doubt I love."
       }
-    }```
+    }
+    ```
 
 1. Navigate in our `rest-fundamentals-example` and run the project.
 Notes:
-   - This project is using [MUI](https://mui.com/) and is using some components, note that you should begin to feel a bit more comfortable navigating this documentation.
-   - run the project. 
+  - This project is using [MUI](https://mui.com/) and is using some components, note that you should begin to feel a bit more comfortable navigating this documentation.
+  - run the project. 
 1. We're going to use one stateful variable to change the author and the quote values, it's going to be an object with that contains two strings: `author` and `quote`.
-   - import the `useState` hook from react.
+  - import the `useState` hook from react.
 
     ```js
     import {useState} from 'react'
     ```
 
-   - right under where we create `Home` function is declared add the stateful variable as follows (remember we're creating an object with two key value pairs)
+  - right under where we create `Home` function is declared add the stateful variable as follows (remember we're creating an object with two key value pairs)
 
     ```js
       const [quoteData, setQuoteData] = useState({
@@ -56,7 +57,7 @@ Notes:
     ```
 
     Note: as a review of state, state can contain any type of data structure here we're just using a js object!
-   - the last step we're going to do is we're going to change the jsx so that when we change the `quoteData` object, its' reflected in the state.
+  - the last step we're going to do is we're going to change the jsx so that when we change the `quoteData` object, its' reflected in the state.
 
     ```js
     <Typography variant="h5" align="center" color="text.primary" paragraph>
@@ -74,7 +75,7 @@ Notes:
     ```
 
 1. Next let's create a click handler function and hook it up to the `onClick` event to the button. The handler will set new values to the quote.
-   - let's first create the event handler.
+  - let's first create the event handler.
 
     ```js
       const handleClick = () => {
@@ -85,7 +86,7 @@ Notes:
       }
     ```
 
-   - then for that function to fire you need to hook it up with the 
+  - then for that function to fire you need to hook it up with the 
 
     ```js
     <Button
@@ -98,13 +99,13 @@ Notes:
 
     Observe what happens when you click the button, the project 
 1. Let's hook up the quote api with our project.
-   - under the function definition of home create a const that will have the url.
+  - under the function definition of home create a const that will have the url.
 
     ```js
     const RANDOM_QUOTE_URL = 'https://favqs.com/api'
     ```
 
-   - change `handleClick` function so that we fetch the url and with the result we use the `setQuoteData` function to change the values.
+  - change `handleClick` function so that we fetch the url and with the result we use the `setQuoteData` function to change the values.
 
     ```js
       const handleClick = () => {
