@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { useState } from 'react';
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -12,7 +13,16 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
 export default function Home() {
-
+  const [quoteData, setQuoteData] = useState({
+    quote: 'Quote here',
+    author: 'Author here'
+  });
+  const handleClick = () => {
+    setQuoteData({
+      quote: "I'm starting to enjoy JavaScript, but don't tell anyone",
+      author: "Myself"
+    })
+  }
 
   return (
     <div>
@@ -42,7 +52,7 @@ export default function Home() {
             }}
           >
             <Typography variant="h5" align="center" color="text.primary" paragraph>
-              Quote here.
+              {quoteData.quote}
             </Typography>
             <Typography
               component="h1"
@@ -51,7 +61,7 @@ export default function Home() {
               color="text.secondary"
               gutterBottom
             >
-              Author here
+              {quoteData.author}
             </Typography>
             <Box
              display="flex"
@@ -60,6 +70,7 @@ export default function Home() {
             >
               <Button
                 variant="contained"
+                onClick={handleClick}
               >
                 Get New Quote
               </Button>
