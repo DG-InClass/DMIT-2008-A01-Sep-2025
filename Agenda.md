@@ -122,6 +122,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
   - 15 Minutes: [API Calls](src\E\react-rest-fundamentals-START\README.md)
   - [ ] Identify the [**main takeaways**](./src/E/Takeaways.md)
 - **Homework**
+  - [ ] Try the refactoring of the [Rest Review Day 2](./src/E/react-rest-reviews-app-START/README-DAY-2.md) on your own
   - [ ] Begin ***Assignment 3*** - States, Events and Templating
 
 
