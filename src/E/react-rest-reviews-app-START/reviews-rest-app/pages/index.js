@@ -27,7 +27,7 @@ import TextField from '@mui/material/TextField';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 
-
+import { useState } from 'react';
 
 export default function Home() {
   const MOCK_ADAPTATION_RATING = [{
@@ -35,6 +35,17 @@ export default function Home() {
     'comment': 'Great movie and book',
     'rating': 10
   }]
+  // Store all reviews in state
+  const [reviews, setReviews] = useState([]);
+  // Event Handlers
+  const loadAllReviewsButton = () => {
+    fetch('http://localhost:5000/reviews')
+      .then((response) => response.json())
+      .then((data) => {
+        setReviews(data);
+      })
+  }
+
   return (
     <div>
       <Head>
@@ -110,12 +121,13 @@ export default function Home() {
           >
             <Button
               variant="contained"
+              onClick={loadAllReviewsButton}
             >
               Load All Current Reviews
             </Button>
           </Box>
-          {MOCK_ADAPTATION_RATING.map((adaptation, index)=> {
-            return <Card key={index}>
+          {reviews.map((adaptation, index)=> {
+            return <Card key={adaptation.id}>
               <CardHeader
                 avatar={
                   <Avatar sx={{ bgcolor: 'blue' }} aria-label="recipe">
