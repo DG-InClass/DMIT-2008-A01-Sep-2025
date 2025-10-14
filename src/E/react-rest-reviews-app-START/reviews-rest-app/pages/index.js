@@ -30,14 +30,24 @@ import Typography from '@mui/material/Typography';
 import { useState } from 'react';
 
 export default function Home() {
-  const MOCK_ADAPTATION_RATING = [{
-    'title': 'Fight Club',
-    'comment': 'Great movie and book',
-    'rating': 10
-  }]
   // Store all reviews in state
   const [reviews, setReviews] = useState([]);
+  // Store form inputs in state
+  const [title, setTitle] = useState("");
+  const [comments, setComments] = useState("");
+  const [rating, setRating] = useState(0);
+
   // Event Handlers
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    const data = {
+      title,
+      comment: comments,
+      rating
+    }
+    console.log(data);
+  }
+
   const loadAllReviewsButton = () => {
     fetch('http://localhost:5000/reviews')
       .then((response) => response.json())
@@ -62,7 +72,7 @@ export default function Home() {
       </AppBar>
       <main>
         <Container maxWidth="md">
-          <form>
+          <form onSubmit={handleSubmit}>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={12}>
                 <TextField
@@ -71,6 +81,8 @@ export default function Home() {
                   label="Adaptation Title"
                   fullWidth
                   variant="standard"
+                  value={title}
+                  onChange={(e) => { setTitle(e.target.value); }}
                 />
               </Grid>
               <Grid item xs={12} sm={12}>
@@ -80,6 +92,8 @@ export default function Home() {
                   label="Comments"
                   fullWidth
                   variant="standard"
+                  value={comments}
+                  onChange={(e)=>{setComments(e.target.value);}}
                 />
               </Grid>
               <Grid item xs={12} sm={12}>
@@ -89,6 +103,8 @@ export default function Home() {
                     row
                     aria-labelledby="adaptation-rating"
                     name="rating-buttons-group"
+                    value={rating}
+                    onChange={(e)=>{setRating(e.target.value);}}
                   >
                     <FormControlLabel value="1" control={<Radio />} label="1" />
                     <FormControlLabel value="2" control={<Radio />} label="2" />
