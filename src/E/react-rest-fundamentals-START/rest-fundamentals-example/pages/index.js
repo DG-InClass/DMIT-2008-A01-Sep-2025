@@ -18,10 +18,26 @@ export default function Home() {
     author: 'Author here'
   });
   const handleClick = () => {
-    setQuoteData({
-      quote: "I'm starting to enjoy JavaScript, but don't tell anyone",
-      author: "Myself"
+    fetch('https://favqs.com/api/qotd', {
+      method: 'GET',
+      mode: 'cors', // Enable CORS
+      headers: {
+        'Content-Type': 'application/json'
+      }
     })
+      .then((response) => response.json())
+      .then((data) => {
+        setQuoteData({
+          quote: data.quote.body,
+          author: data.quote.author
+        })
+      })
+      .catch((err) => {
+        setQuoteData({
+          quote: "Coding Advice: If it's broke, it's your fault",
+          author: "Dan Gilleland"
+        })
+      });
   }
 
   return (
