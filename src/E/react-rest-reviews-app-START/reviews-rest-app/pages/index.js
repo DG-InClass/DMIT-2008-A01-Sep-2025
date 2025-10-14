@@ -45,7 +45,21 @@ export default function Home() {
       comment: comments,
       rating
     }
-    console.log(data);
+    // console.log(data);
+    fetch('http://localhost:5000/reviews', {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    }).then(resp => resp.json())
+    .then((data) => {
+      console.log('POST Result:', data);
+      setReviews([data, ...reviews]);
+    })
+    .catch(err => {
+      console.error('PROBLEM! ', err);
+    })
   }
 
   const loadAllReviewsButton = () => {
