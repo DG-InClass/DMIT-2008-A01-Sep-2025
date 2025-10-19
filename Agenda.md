@@ -133,12 +133,16 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Oct 20
 
-- **Today** - Begin [Part F](./src/F/ReadMe.md)
-  - We'll need to **adapt the instructions** so that you use your **personal GitHub account** for this demo
-  - 🚨 **NEVER** publish marked assignments outside of the provided *GitHub Classroom assignment repos*. This includes *after you finish this course*.
+- **Today**
+  - [Part F](./src/F/ReadMe.md) - **Deploying to Vercel**
+    - We'll need to **adapt the instructions** so that you use your **personal GitHub account** for this demo
+    - 🚨 **NEVER** publish marked assignments outside of the provided *GitHub Classroom assignment repos*. This includes *after you finish this course*.
+  - [Part G](./src/G/ReadMe.md) - **React Components and LifeCycle**
 
 ### Oct 21
 
+- **Today**
+  - Continue [Part G](./src/G/ReadMe.md) - **React Components and LifeCycle**
 
 ### Oct 27
 
