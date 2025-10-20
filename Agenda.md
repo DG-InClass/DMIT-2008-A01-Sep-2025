@@ -1,6 +1,6 @@
 # Agenda (A01)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#oct-14). Also check out the [**Draft Planning Calendar**](./Calendar.md)
+> These are my notes on what I plan to teach in each [**upcoming class**](#oct-20). Also check out the [**Draft Planning Calendar**](./Calendar.md)
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -135,15 +135,17 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 - **Today**
   - [Part F](./src/F/ReadMe.md) - **Deploying to Vercel**
+    - Try the [Deploy-React-App](https://github.com/dgilleland/Deploy-React-App) as a starter kit.
     - We'll need to **adapt the instructions** so that you use your **personal GitHub account** for this demo
     - 🚨 **NEVER** publish marked assignments outside of the provided *GitHub Classroom assignment repos*. This includes *after you finish this course*.
-  - [Part G](./src/G/ReadMe.md) - **React Components and LifeCycle**
+- **Homework**
+  - Try deploying another website of yours to Vercel.
 
 ### Oct 21
 
 - **Today**
+  - [Part G](./src/G/ReadMe.md) - **React Components and LifeCycle**
   - Continue [Part G](./src/G/ReadMe.md) - **React Components and LifeCycle**
-    - Try the [Deploy-React-App](https://github.com/dgilleland/Deploy-React-App) as a starter kit.
 
 ### Oct 27
 
