@@ -143,6 +143,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 - **Today**
   - Continue [Part G](./src/G/ReadMe.md) - **React Components and LifeCycle**
+    - Try the [Deploy-React-App](https://github.com/dgilleland/Deploy-React-App) as a starter kit.
 
 ### Oct 27
 
