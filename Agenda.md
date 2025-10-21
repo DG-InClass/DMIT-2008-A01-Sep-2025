@@ -1,6 +1,6 @@
 # Agenda (A01)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#oct-20). Also check out the [**Draft Planning Calendar**](./Calendar.md)
+> These are my notes on what I plan to teach in each [**upcoming class**](#oct-21). Also check out the [**Draft Planning Calendar**](./Calendar.md)
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -146,6 +146,8 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 - **Today**
   - [Part G](./src/G/ReadMe.md) - **React Components and LifeCycle**
   - Continue [Part G](./src/G/ReadMe.md) - **React Components and LifeCycle**
+- **Homework**
+  - Install the [React Dev Tools](https://react.dev/learn/react-developer-tools) for your browser.
 
 ### Oct 27
 
