@@ -36,6 +36,8 @@ export default function Home() {
   // Hook into the "mounting" part of the component lifecycle
   useEffect(() => {
     console.log('Home component is mounted');
+    loadAllReviews(); // so that the "state" will be updated
+                      // as soon as the component is mounted
   }, []);
 
   const handleSubmit = (event) => {
@@ -49,7 +51,7 @@ export default function Home() {
       })
   }
 
-  const loadAllReviewsButton = () => {
+  const loadAllReviews = () => {
     getReviews().then((data)=> {
       setReviews(data)
     })
@@ -141,12 +143,6 @@ export default function Home() {
               pb: 2,
             }}
           >
-            <Button
-              variant="contained"
-              onClick={loadAllReviewsButton}
-            >
-              Load All Current Reviews
-            </Button>
           </Box>
           {reviews.map((adaptation, index)=> {
             return <AdaptationReviewCard
