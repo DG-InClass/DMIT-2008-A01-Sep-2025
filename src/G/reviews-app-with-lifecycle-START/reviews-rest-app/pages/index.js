@@ -34,11 +34,20 @@ export default function Home() {
   const [rating, setRating] = useState(0)
 
   // Hook into the "mounting" part of the component lifecycle
+  // useEffect allows us to respond to the "outside world" via
+  // "side effects"
   useEffect(() => {
     console.log('Home component is mounted');
     loadAllReviews(); // so that the "state" will be updated
                       // as soon as the component is mounted
-  }, []);
+  }, [reviews]); // observe all changes to the `reviews`
+
+  const deleteReviewItem = (deleteReviewId) => {
+    // filter out the review I want to delete by getting a new array
+    let allReviews = reviews.filter((review) => review.id !== deleteReviewId);
+    // update the React state of my component
+    setReviews(allReviews);
+  }
 
   const handleSubmit = (event) => {
     event.preventDefault()
@@ -147,6 +156,8 @@ export default function Home() {
           {reviews.map((adaptation, index)=> {
             return <AdaptationReviewCard
                 key={index}
+                id={adaptation.id}
+                deleteCallback={deleteReviewItem}
                 rating={adaptation.rating}
                 title={adaptation.title}
                 comment={adaptation.comment}
