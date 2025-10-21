@@ -9,11 +9,17 @@ import Typography from '@mui/material/Typography';
 
 import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from '@mui/material/IconButton';
+import { deleteReviewItem } from '../utils/api/reviews.js';
 
 export default function AdaptationReviewCard(props) {
   const deleteReviewHandler = (reviewId) => {
     console.log(`deleting ${reviewId}....`);
-    props.deleteCallback(reviewId);
+    deleteReviewItem(reviewId).then((data) => {
+      // Only update the React state in the parent via
+      // the callback it gave us AFTER our API call
+      // to DELETE was successful.
+      props.deleteCallback(reviewId);
+    });
   }
 
   return <Card sx={{mt: 2 }}>
