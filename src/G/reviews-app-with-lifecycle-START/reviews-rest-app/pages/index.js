@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -32,6 +32,11 @@ export default function Home() {
   const [title, setTitle] = useState("")
   const [comments, setComments] = useState("")
   const [rating, setRating] = useState(0)
+
+  // Hook into the "mounting" part of the component lifecycle
+  useEffect(() => {
+    console.log('Home component is mounted');
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault()
