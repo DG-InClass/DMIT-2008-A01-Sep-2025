@@ -120,6 +120,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 - **Today** - Begin [Part E](./src/E/ReadMe.md)
   - 15 Minutes: [API Calls](./src/E/react-rest-fundamentals-START/README.md)
+    - **Use something other than Quotes!** - https://www.apicountries.com ⭐ The Repo!!
   - 10 Minutes: **What is REST?**
     - 📺 [REST APIs Explained in 30 secs](https://youtube.com/shorts/hQUjpbb75eY?si=HQ_pLE1seM5Ry34a) (**0:30**)
     - 📺 [What is a Rest API? (in 2 Minutes)](https://youtu.be/WRsKs-K6iII?si=KmY0EUARM7WsNVsx) (**2:10**)
