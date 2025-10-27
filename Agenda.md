@@ -1,6 +1,6 @@
 # Agenda (A01)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#oct-21). Also check out the [**Draft Planning Calendar**](./Calendar.md)
+> These are my notes on what I plan to teach in each [**upcoming class**](#oct-27). Also check out the [**Draft Planning Calendar**](./Calendar.md)
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -152,18 +152,42 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Oct 27
 
+- **Today**
+  - [Part H](./src/H/ReadMe.md) - **NextJS Routing and Pages**
+    - [Takeaways](./src/H/Takeaways.md)
 
 ### Oct 28
 
+- **Today**
+  - [Part I](./src/I/ReadMe.md) - **Next JS Routing**
+    - [Astronauts](./src/I/nextjs-12-space-page-ssr-START/README.md)
+    - [Takeaways](./src/I/Takeaways.md)
 
 ### Nov 03
+
+- **Today**
+  - Continue [Part I](./src/I/ReadMe.md) - **Next JS Routing**
+    - [SSR Calls to the Backend](./src/I/nextjs-12-reviews-app-ssr-START/README.md)
 
 
 ### Nov 04
 
+- **Today**
+  - Testing - the start of a multi-day journey....
+
+### Nov 10
+
+> *Lost class due to fall break* 😢
+
+### Nov 11
+
+> *Lost class due to fall break* 😢
+
 
 ### Nov 17
 
+- **Today**
+  - Testing (cont.)
 
 ### Nov 18
 
