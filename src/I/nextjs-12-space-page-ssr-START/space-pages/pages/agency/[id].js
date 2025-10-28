@@ -12,19 +12,31 @@ import SimpleDetailsCard from '@components/SimpleDetailsCard'
 import LoadingCircle from '@components/LoadingCircle'
 
 
-import {getAgency} from '@utils/api/agencies'
+import {getAgency} from '@utils/api/agencies';
 
-export default function Agency() {
-  const [agencyDetails, setAgencyDetails] = useState()
+export async function getServerSideProps(context) {
+  const { id } = context.params; // rather than through the router
+  const agencyInfo = await getAgency(id);
+  console.log('Got agency info for id:', id);
+  return {
+    props: {
+      id: id,
+      agencyInfo: agencyInfo
+    }, // will be pased to the page component as props
+  }
+}
 
-  const router = useRouter()
-  const { id } = router.query
+export default function Agency(props) {
+  // const [agencyDetails, setAgencyDetails] = useState()
+  const agencyDetails = props.agencyInfo;
+  // const router = useRouter()
+  // const { id } = router.query
 
-  useEffect(()=> {
-      getAgency(id).then((data)=> {
-          setAgencyDetails(data)
-      })
-  }, [id])
+  // useEffect(()=> {
+  //     getAgency(id).then((data)=> {
+  //         setAgencyDetails(data)
+  //     })
+  // }, [id])
 
   return <>
     <NavBar />

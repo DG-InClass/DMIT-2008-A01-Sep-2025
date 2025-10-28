@@ -13,16 +13,29 @@ import NavBar from '@components/NavBar';
 
 import { getAgencies } from '@utils/api/agencies'
 
-export default function Home() {
-  const [agenciesData, setAgenciesData] = useState([])
+
+export async function getServerSideProps(context) {
+  const agencies = await getAgencies();
+  console.log('Server side?');
+  return {
+    props: {
+      agencies: agencies
+    }, // this will be passed to the page component as props
+  }
+}
+
+export default function Home(props) {
+  console.log('Home Props: ', props);
+
+  // const [agenciesData, setAgenciesData] = useState([])
   
-  useEffect(()=> {
-    // fire this on load.
-    getAgencies().then((data)=> {
-      console.log(data)
-      setAgenciesData(data.results)
-    })
-  }, [])
+  // useEffect(()=> {
+  //   // fire this on load.
+  //   getAgencies().then((data)=> {
+  //     console.log(data)
+  //     setAgenciesData(data.results)
+  //   })
+  // }, [])
 
 
   return (
@@ -48,7 +61,7 @@ export default function Home() {
               alignItems: 'center',
             }}
           >
-            {agenciesData.map((agency)=> {
+            {props.agencies.results.map((agency)=> {
               return <AgencyCard
                 key={agency.id}
                 id={agency.id}
