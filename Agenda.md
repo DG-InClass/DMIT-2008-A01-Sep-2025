@@ -195,12 +195,21 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Nov 18
 
+- **Today**
+  - Begin [Part K](./src/K/ReadMe.md)
+    - `useContext()` and Application State
 
 ### Nov 24
 
+- **Today**
+  - Continue [Part K](./src/K/ReadMe.md)
+    - Authentication
 
 ### Nov 25
 
+- **Today**
+  - General Review
+  - About *Assignment **5***
 
 ### Dec 01
 
