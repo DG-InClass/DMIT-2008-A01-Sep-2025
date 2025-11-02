@@ -169,12 +169,14 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
   - Continue [Part I](./src/I/ReadMe.md) - **SSR**
     - [SSR Calls to the Backend](./src/I/nextjs-12-reviews-app-ssr-START/README.md)
     - Follow along on [**Week 10, Day 1**](http://dgilleland.github.io/DMIT-2008/lessons/w10-d1/)
-
+  - Listen to me Lecture about Automated Testing... 😃
 
 ### Nov 04
 
 - **Today**
   - Testing - the start of a multi-day journey....
+  - Begin [Part J](./src/J/ReadMe.md)
+  - Review notes on [**Week 10, Day 2**](https://dgilleland.github.io/DMIT-2008/lessons/w12-d1/)
 
 ### Nov 10
 
@@ -189,6 +191,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 - **Today**
   - Testing (cont.)
+  - Continue [Part J](./src/J/ReadMe.md)
 
 ### Nov 18
 
