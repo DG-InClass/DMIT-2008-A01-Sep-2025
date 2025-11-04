@@ -169,7 +169,8 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
   - Continue [Part I](./src/I/ReadMe.md) - **SSR**
     - [SSR Calls to the Backend](./src/I/nextjs-12-reviews-app-ssr-START/README.md)
     - Follow along on [**Week 10, Day 1**](http://dgilleland.github.io/DMIT-2008/lessons/w10-d1/)
-  - Listen to me Lecture about Automated Testing... 😃
+  - *Assignment 4A* - QnA
+  - **Bonus Time:** Listen to me Lecture about Automated Testing... 😃
 
 ### Nov 04
 
