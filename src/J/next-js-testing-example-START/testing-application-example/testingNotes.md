@@ -2,7 +2,7 @@
 
 Start by getting the packages installed - `npm install`.
 
-We're going to add four Developer Dependencies.
+We're going to add four Developer Dependencies: `npm install -D <package>`
 
 - `jest`
 - `jest-environment-jsdom`
