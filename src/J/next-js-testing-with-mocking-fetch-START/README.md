@@ -43,7 +43,7 @@ export default createJestConfig(config)
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test-watch": "jest --watch"
+    "test:watch": "jest --watch"
   },
 ```
 the command `npm run test-watch` will essentially just continue to run the tests as we change them. Run this now and we'll see that there's no tests so we'll go write one!
@@ -125,12 +125,12 @@ test("test home loads a quote on load", async () => {
     expect(authorElement).toHaveTextContent(AUTHOR)
 })
 ```
-This is using an using function because it needs to wait for the `useEffect` to fire on mount.
+This is using an `async` function because it needs to wait for the `useEffect` to fire on mount.
 Second we see that our quotes are not the original values we see in the `Home` components (see they are different than `DEFAULT_QUOTE`, `DEFAULT_AUTHOR`) and that our values are now equal to the `QUOTE` and `AUTHOR`.
 
 NOTE: this needs to be an "async" function that "awaits" the act or you'll struggle.
 
-4. Let's write a test that checks the quote is changed on the `Home` component after the button is clicked.
+1. Let's write a test that checks the quote is changed on the `Home` component after the button is clicked.
 ```jsx
 // ... imports here ...
 
@@ -146,8 +146,8 @@ test("home loads a new quote when clicking the button.", async () => {
     })
 
     // add a very important quote that will change your life like below.
-    const NEW_QUOTE = "I can shoot 3s with my eyes closed."
-    const NEW_AUTHOR = "Dan Mouris"
+    const NEW_QUOTE = "A computer program is a set of instructions for manipulating information."
+    const NEW_AUTHOR = "Dan Gilleland"
 
     // create a new request with the new quote and author.
     server.use(
