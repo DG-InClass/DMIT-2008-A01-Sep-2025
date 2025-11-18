@@ -1,6 +1,6 @@
 # Agenda (A01)
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#oct-27). Also check out the [**Draft Planning Calendar**](./Calendar.md)
+> These are my notes on what I plan to teach in each [**upcoming class**](#nov-18). Also check out the [**Draft Planning Calendar**](./Calendar.md)
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -193,18 +193,23 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 - **Today**
   - Testing (cont.)
   - Continue [Part J](./src/J/ReadMe.md)
+    - 🐞 Snag hit in outdated demo
 
 ### Nov 18
 
 - **Today**
   - Begin [Part K](./src/K/ReadMe.md)
     - `useContext()` and Application State
+    - This has a [**backend**](./src/K/rest-reviews-with-context-toast-START/reviews-mock-backend) and a [**front-end**](./src/K/rest-reviews-with-context-toast-START/reviews-rest-app)
+    - We will follow the [**instructions**](./src/K/rest-reviews-with-context-toast-START/README.md) and see where they lead....
 
 ### Nov 24
 
 - **Today**
   - Continue [Part K](./src/K/ReadMe.md)
     - Authentication
+    - This also has a [*backend*](./src/K/authentication-example-START/authentication-mock-backend/) and a [*front-end*](./src/K/authentication-example-START/app-state-auth-example-new/)
+    - Again, we will follow the [*instructions*](./src/K/authentication-example-START/README.md) and see where we end up.
 
 ### Nov 25
 
