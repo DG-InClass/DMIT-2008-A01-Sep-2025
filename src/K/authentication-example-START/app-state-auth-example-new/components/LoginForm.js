@@ -8,7 +8,8 @@ import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 
-
+import { useAuth } from './state/AuthProvider';
+import { useNotification } from './state/AppNotification';
 
 export default function LoginForm(){
   const [email, setEmail] = useState("")
@@ -16,10 +17,18 @@ export default function LoginForm(){
   const router = useRouter()
 
   /* import the hook here */
+  const { signIn } = useAuth();
+  const { showNotification } = useNotification();
   
   const handleLogin = (event)=> {
     event.preventDefault()
     /* make the sign in request here. */
+    signIn({email, password}).then(() => {
+      showNotification({ message: "Login successful", severity: "success" });
+      router.push('/dashboard/'); // forward the user to the dashboard page
+    }).catch((error) => {
+      showNotification({ message: "Login failed", severity: "error" });
+    });
   }
 
   return <Box component="form" noValidate sx={{ mt: 1 }}
