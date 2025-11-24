@@ -12,9 +12,14 @@ import RadioGroup from '@mui/material/RadioGroup';
 
 import TextField from '@mui/material/TextField';
 
+import { useContext } from 'react';
+import { AppNotificationContext } from './state/AppNotification';
+
 import { postReview } from '../utils/api/reviews';
 
 export default function AdaptationReviewForm(props) {
+  const {showNotification} = useContext(AppNotificationContext);
+
   const [title, setTitle] = useState("")
   const [comments, setComments] = useState("")
   const [rating, setRating] = useState(0)
@@ -30,6 +35,10 @@ export default function AdaptationReviewForm(props) {
       rating: rating
     }).then((newReviewData)=> {
       props.setReviews([newReviewData, ...props.reviews])
+      showNotification({
+        message: `Successfully added review for "${title}`,
+        severity: 'success'
+      })
       resetForm()
     })    
   }
