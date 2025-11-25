@@ -215,6 +215,7 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 ### Nov 25
 
 - **Today**
+  - Complete [Part K](https://github.com/DG-InClass/DMIT-2008-A01-Sep-2025/blob/main/src/K/authentication-example-START/README.md#9-lets-protect-our-dashboard-page-this-should-only-available-to-users-that-are-authenticated-so-we-want-to-reroute-our-unauthenticated-users-lets-do-this-with-our-useauth-hook) <!-- ewww -->
   - General Review
   - About *Assignment **5***
 
