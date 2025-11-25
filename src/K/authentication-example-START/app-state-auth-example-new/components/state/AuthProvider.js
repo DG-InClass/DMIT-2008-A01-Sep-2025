@@ -1,16 +1,25 @@
 // ~/components/state/AuthProvider.js
 
-import { useState, useContext, createContext } from 'react';
+import { useState, useContext, createContext, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import { login } from '@/utils/api/auth';
 
 export const AuthenticationContext = createContext({});
 
 // "custom hook" with default argument as a "convenience function" for consumers
-export const useAuth = () => {
+export const useAuth = (options = {protectedPage: false}) => {
     const context = useContext(AuthenticationContext);
     if(!context) {
         throw new Error(`useAuth must be used with a AuthProvider component`);
     }
+    const router = useRouter();
+    useEffect(() => {
+        // check if the user is authenticated and if it's a protected page
+        if (!context.isAuthenticated && options.protectedPage) {
+            // route the user to the home page (which isn't protected)
+            router.push("/");
+        }
+    }, [context.isAuthenticated]);
     return context;
 }
 
@@ -34,6 +43,7 @@ export default function AuthProvider({children}) {
            setIsAuthenticated(true);
            setToken(loginData.accessToken);
            setUser(loginData.user);
+           console.log(user);
         });
     }
 
