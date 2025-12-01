@@ -221,6 +221,9 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 ### Dec 01
 
+- **Today**
+  - Assignment 5
+  - Unit Testing (Revisited)
 
 ### Dec 02
 
