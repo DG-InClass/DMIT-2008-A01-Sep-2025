@@ -228,11 +228,11 @@ See the overview of [today's lesson](https://dgilleland.github.io/DMIT-2008/less
 
 - **Today**
   - Unit Testing (Revisited)
-
+<!-- 
     ```ps
     pnpm dlx tiged --disable-cache --force DG-InClass/DMIT-2008-A01-Sep-2025/sk/J/testing-revisited ./src/J/testing-revisited
     ```
-
+ -->
 
 ### Dec 08
 
